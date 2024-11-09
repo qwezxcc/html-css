@@ -1,0 +1,23 @@
+.p1 {
+    color:aqua;
+    background-color: blue;
+    font-size:30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.p2 {
+    color:rgb(94, 49, 49);
+    background-color: coral;
+    font-size:30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.p3 {
+    color: rgb(64, 159, 255);
+    background-color: rgb(199, 250, 211);
+    font-size:30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p:nth-child(5) {
+    color:rgba(99, 156, 241, 0.623)
+}
