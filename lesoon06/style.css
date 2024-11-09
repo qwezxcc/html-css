@@ -6,6 +6,20 @@ header img {
     width: 50px;
 }
 
+header ul{
+    display: flex;
+    list-style: none
+}
+
 .lol img {
     width: 80px;
+}
+header ul a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: burlywood;
+}
+
+header ul a:hover{
+    background-color: cadetblue;
 }
