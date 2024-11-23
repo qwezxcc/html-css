@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+h1{
+    font-size: 90px;
+    color: #a00358;
+    text-shadow: 3px 2px 0px #f7d8e1,
+                 5px 5px 10px #f6a9bf,
+                 -10px 5px 15px #fafb8e,
+                 -5px -5px 25px #bb03f7;    
+}
+
+section{
+    display:flex;
+
+}
+p{
+    margin: 20px;
+    padding: 20px;
+}
+/*Lion-King*/
+.Lion-King, .hakuna {
+    justify-content: center;
+    align-items: center;
+
+}
+/*lion-child*/
+.lion-child{
+    font-weight: bold;
+    font-size: 40pt;
+    color: #0411b6;
+    font-family: "Underdog", system-ui;
+}
+/*greeting*/
+.greeting{
+    text-indent: 12px;
+    font-size: 20pt;
+    align-items: center;
+    text-align: center;
+}
+
+.hakuna{
+    font-family: cursive;
+    font-size: 20pt;
+    color: #9a5217;
+    text-align: center;
+}
