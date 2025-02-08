@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha|Philosopher');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: ' Philosopher ', sans-serif;
+}
+/*--- main container ---*/
+.main_container {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+
+}
+
+h1{
+    font-size: 56px;
+    padding: 40px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-shadow: 2px 2px 5px black;
+    color: floralwhite;
+
+}
+
+.container{
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    border: 1px solid red;
+
+}
+
+.container img {
+    border: 10px solid whitesmoke;
+    border-bottom-width: 30px;
+    box-shadow: 2px 3px 5px black;
+
+}
+
+.container div {
+    position: absolute;
+    transition: transform 120ms linear;
+}
+
+.container div a {
+    border-bottom: 3px solid blue;
+}
+
+.foto1 {
+    top: 202px;
+    right: 831px;
+}
+.foto2 {
+    top: 20px;
+    left: 499px;
+}
+
+
+.foto3 {
+    top: 202px;
+  right: 92px;
+  transform: rotate(3deg);
+}
+
+ 
+.foto4 {
+    top: 202px;
+    left: 366px;
+}
+
+
+.foto5 {
+    top: 20px;
+    right: 685px;
+}
+
+
+.foto6 {
+    top: 20px;
+    left: 121px;
+}
+
+
+.foto7 {
+    top: 202px;
+    right: 475px;
+}
+
+
+.foto8 {
+    top: 20px;
+    right: 321px;
+}
+
+
+.foto9 {
+    top: 200px;
+    left: 18px;
+    transform: rotate(-3deg);
+}
+
+.container div:hover {
+    z-index: 2;
+    transform: scale(1.1, 1.1);
+}
+
+#foto1_about{
+    width: 700px;
+    margin: 50px;
+}
+
+#foto1_about p {
+    background-color: rgba(250, 250, 250, 0.5);
+    padding: 20px;
+    border: solid 10px;
+    border-image-slice: 20;
+    font-size: 24px;
+    border-image: linear-gradient(to top left, #FFD9B3 0%, #FFFFBF 50%, #FFF345 100%);
+}
+#foto1_about img{
+    padding: 20px;
+    float: left;
+}
+/**/
+#foto6_about{
+    width: 700px;
+    margin: 50px;
+}
+#foto6_about p {
+    background-color: rgba(250, 250, 250, 0.5);
+    padding: 20px;
+    border: solid 15px;
+    border-image-slice: 20;
+    font-size: 24px;
+    border-image: linear-gradient(to top left, #FFD9B3 0%, #FFFFBF 50%, #FFF345 100%);
+}
+#foto6_about img{
+    padding: 20px;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
