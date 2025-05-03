@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Mandali|Raleway:900&display=swap');
+
+body{
+    font-family: Mandali, Arial;
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form > input{
+    display: none;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 50vmin;
+    height: 50vmin;
+}
+
+.tile{
+    margin: 5%;
+    position: relative;
+    background-color: skyblue;
+
+}
+
+.tile label, 
+.tile div {
+    display: block;
+    position: absolute;
+    top:  0px;
+    left:  0px;
+    background-color: rgba(0,0,0, 0.2);
+    height: 100%;
+    width: 100%;
+}
+
+.tile div{
+    display: none;
+    overflow: hidden;
+    text-shadow: 0px 1px 6px skyblue;
+}
+
+/* послідовність */
+
+input[for$='-x']{
+    z-index: 1;
+}
+
+
+/* невидимі мітки */
+input[id*='-0-']:checked ~ #board label[for*='-0-'],
+input[id*='-1-']:checked ~ #board label[for*='-1-'],
+input[id*='-2-']:checked ~ #board label[for*='-2-'],
+input[id*='-3-']:checked ~ #board label[for*='-3-'],
+input[id*='-4-']:checked ~ #board label[for*='-4-'],
+input[id*='-5-']:checked ~ #board label[for*='-5-'],
+input[id*='-6-']:checked ~ #board label[for*='-6-'],
+input[id*='-7-']:checked ~ #board label[for*='-7-'],
+input[id*='-8-']:checked ~ #board label[for*='-8-']{
+    display: none;
+}
+
+/* на початку видимі блоки*/
+input[id*='-0-']:checked ~ #board #tile-0 div,
+input[id*='-1-']:checked ~ #board #tile-1 div,
+input[id*='-2-']:checked ~ #board #tile-2 div,
+input[id*='-3-']:checked ~ #board #tile-3 div,
+input[id*='-4-']:checked ~ #board #tile-4 div,
+input[id*='-5-']:checked ~ #board #tile-5 div,
+input[id*='-6-']:checked ~ #board #tile-6 div,
+input[id*='-7-']:checked ~ #board #tile-7 div,
+input[id*='-8-']:checked ~ #board #tile-8 div{
+    display: block;
+}
+
+/* контент всередині div - X*/
+input[id*='-0-x']:checked ~ #board #tile-0 div::before,
+input[id*='-1-x']:checked ~ #board #tile-1 div::before,
+input[id*='-2-x']:checked ~ #board #tile-2 div::before,
+input[id*='-3-x']:checked ~ #board #tile-3 div::before,
+input[id*='-4-x']:checked ~ #board #tile-4 div::before,
+input[id*='-5-x']:checked ~ #board #tile-5 div::before,
+input[id*='-6-x']:checked ~ #board #tile-6 div::before,
+input[id*='-7-x']:checked ~ #board #tile-7 div::before,
+input[id*='-8-x']:checked ~ #board #tile-8 div::before{
+    contain: "X";
+    background-color: rgb(104, 104, 231);
+    color: rgb(116, 168, 168);
+}
+
+/* контент всередині div - O*/
+input[id*='-0-o']:checked ~ #board #tile-0 div::before,
+input[id*='-1-o']:checked ~ #board #tile-1 div::before,
+input[id*='-2-o']:checked ~ #board #tile-2 div::before,
+input[id*='-3-o']:checked ~ #board #tile-3 div::before,
+input[id*='-4-o']:checked ~ #board #tile-4 div::before,
+input[id*='-5-o']:checked ~ #board #tile-5 div::before,
+input[id*='-6-o']:checked ~ #board #tile-6 div::before,
+input[id*='-7-o']:checked ~ #board #tile-7 div::before,
+input[id*='-8-o']:checked ~ #board #tile-8 div::before{
+    contain: "O";
+    background-color: rgb(104, 104, 231);
+    color: rgb(116, 168, 168);
+}
+
+.tile label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0, 0.25);
+}
+
+.tile label::before,
+.tile div::before{
+    color: black;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8vmin;
+    font-weight: bold;
+}
+
+.tile div{
+    display: none;
+    overflow: hidden;
+    font-size: 8vmin;
+    font-weight: bold;
+}
+
+.tile div::before{
+    padding: 100%;
+}
+
+.tile label[for$='-o']:hover::before{
+    content: 'O'
+}
+
+.tile label[for$='-x']:hover::before{
+    content: 'X';
+    
+}
+
+#tile-0 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
