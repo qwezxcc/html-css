@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Tagesschrift", system-ui;
+}
+.abaut_characters{
+    height: 100vh;
+    display: flex;
+    background-image: url(images/how-to-train-your-dragon-2.jpg);
+}
+/* --- menu --- */
+.characters_menu{
+    width: 200px;
+    position: relative;
+}
+.characters_menu > div{
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+.characters_menu ul{
+    list-style: none;
+
+}
+
+.characters_menu ul a{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    display: inline-block;
+
+}
+.characters_menu ul li:nth-of-type(1)::before{
+    content: 'Hiccup';
+}
+
+.characters_menu ul li:nth-of-type(2)::before{
+    content: 'Astrid';
+}
+
+.characters_menu ul li:nth-of-type(3)::before{
+    content: 'Gruffnut';
+}
+
+.characters_menu ul li:nth-of-type(4)::before{
+    content: 'Spitelout';
+}
+
+.characters_menuul li{
+    position: relative;
+}
+
+.characters_menu ul li::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    opacity: 0;
+
+}
+
+.characters_menu ul li:hover::before{
+    opacity: 1;
+}
+
+
+
+/* --- container --- */
+.characters_conteiner{
+    position: relative;
+    flex: 1;
+}
+
+.characters_conteiner > div{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    margin-top: -200px;
+    margin-left: -350px;
+    background-color: rgb(222, 230, 238);
+    box-shadow: 2px 2px 8px black;
+    z-index: 0;
+    border-radius: 4;
+    padding: 20px;
+}
+
+.characters_conteiner > div img{
+    float: left;
+    margin: 0px 15px 15px 0px;
+    border: 3px solid rgb(119, 194, 255);
+}
+
+.characters_conteiner h2{
+    margin-bottom: 10px ;
+}
+
+.characters_conteiner p{
+    text-align: justify;
+}
+
+#Hiccup{
+    transform: rotate(-4deg);
+
+}
+#Hiccup:target{
+    transform: rotate(0deg);
+    animation: container_div_up 0.5s linear;
+    z-index: 1;
+
+}
+
+#Astrid{
+    transform: rotate(5deg);
+
+
+}
+#Astrid:target{
+    transform: rotate(0deg);
+    animation: container_div_up 0.5s linear;
+    z-index: 1;
+
+}
+
+#Gruffnut{
+    transform: rotate(-10deg);
+
+
+}
+#Gruffnut:target{
+    transform: rotate(0deg);
+    animation: container_div_up 0.5s linear;
+    z-index: 1;
+
+}
+
+#Spitelout{
+    transform: rotate(8deg);
+
+
+}
+#Spitelout:target{
+    transform: rotate(0deg);
+    animation: container_div_up 0.5s linear;
+    z-index: 1;
+
+}
+
+
+
+@keyframes container_div_up{
+    0%{
+        top: 50%;
+        
+    }
+    50%{
+        top: 40%;
+
+    }
+    100%{
+        top: 50%;
+
+    }
+}
+
+
+
+
+
+
+
+
+

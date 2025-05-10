@@ -175,3 +175,21 @@ text-align: right;
 	height: 100%;
 	shape-outside: polygon(0px 116px, 63px 176px, 101px 251px, 121px 336px, 47px 420px, 47px 550px, 278px 550px, 278px 0px, 0px 0px, 0px 116px);
 }
+
+
+.gallery{
+	height: 680px;
+	background-color: #a7c7e7;
+
+}
+
+.gallery input{
+	display: none;
+}
+
+.slider {
+	position: relative;
+	width: 90%;
+	height: 650px;
+	overflow: hidden;
+}

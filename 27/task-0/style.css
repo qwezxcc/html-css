@@ -1,0 +1,54 @@
+label {
+    cursor: pointer;
+    margin: 10px;
+    padding: 3px;
+    background-color: #a7c7e7;
+
+}
+
+.bg-img{
+    border: 2px solid;
+    width: 174px;
+    height: 174px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
+}
+
+#i1:checked ~ .bg-img {
+    background-image: url(images/anger.png);
+
+}
+
+#i2:checked ~ .bg-img {
+    background-image: url(images/disgust.png);
+    
+}
+
+#i3:checked ~ .bg-img {
+    background-image: url(images/fear.png);
+    
+}
+
+#i4:checked ~ .bg-img {
+    background-image: url(images/joy.png);
+    
+}
+
+#i5:checked ~ .bg-img {
+    background-image: url(images/sadness.png);
+    
+}
+
+input {
+    display: none;
+
+}
+
+#i1:checked ~ .labels label:nth-of-type(1),
+#i2:checked ~ .labels label:nth-of-type(2),
+#i3:checked ~ .labels label:nth-of-type(3),
+#i4:checked ~ .labels label:nth-of-type(4),
+#i5:checked ~ .labels label:nth-of-type(5) {
+    background-color: rgb(56, 157, 240);
+}
